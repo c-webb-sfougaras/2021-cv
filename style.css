@@ -250,7 +250,7 @@ p {
 
 .portfolio ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1fr, 1fr);
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -271,6 +271,49 @@ p {
   width: 30%;
 }
 
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+.portfolioButton {
+  background-color: #4d6452;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 1%;
+  width: 25%;
+  margin: 10px;
+}
+
+.portfolioButton:hover {
+  transition: 0.5s;
+  background-color: #b0ccb6;
+  color: #4d6452;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 1%;
+  width: 25%;
+  margin: 10px;
+}
+
+.portfolioButtonHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 1000px) {
   .container {
     margin: 10px;
@@ -284,6 +327,9 @@ p {
   }
   .portfolio ul {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolioButtonHolder {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -303,13 +349,7 @@ p {
   .portfolio ul {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-a {
-  color: white;
+  .portfolioButtonHolder {
+    grid-template-columns: repeat(1fr);
+  }
 }
