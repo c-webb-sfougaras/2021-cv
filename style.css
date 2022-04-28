@@ -353,6 +353,12 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.portfolioImg {
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 10px;
+}
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;

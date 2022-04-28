@@ -128,7 +128,7 @@
             add to my skill-set. <br>
             I have had a long-standing interest in software and workflow automation, which inspired me to join Northcoders 
             and study web development last year. I found a real passion for it, particularly front end and app design. 
-            I am currently studying UX and UI design using Adobe XD.
+            I am currently studying UX and UI design using Adobe XD. This is a self-lead project.
             
             <br><br>
             This website is built using only CSS and HTML. The layout is responsive and can be viewed on browser, tablet or mobile.
@@ -138,54 +138,79 @@
           <h2 class="title2">Portfolio</h2>
           <ul>
             <li>
-              <h3 class="title2">NC Games</h3>
-
-              <p> I created an API using Node.js, a database with Postgres and SQL, a
-                React.JS front end which interacted with the API, and styled it with CSS.</p>
-              <p class="portfolioButtonHolder">
-                <a class="portfolioButton" class="grid-item" href="https://6165974a66c64c00079c6ef2--mystifying-curie-fab181.netlify.app/" target="__blank">Front End</a>
-                <a class="portfolioButton" class="grid-item" href="https://c-sfougaras-nc-games-project.herokuapp.com/api" target="__blank">Back End</a>
+              <h3 class="title2">Fortune Teller</h3>
+              <img src="./Untitled design (3).png" alt="portfolioImg" class="portfolioImg">
+              <p> A React.js App which uses conditional rendering to display a tarot card reading
+               which can be selected by the user from the landing page.<br> The tarot card data is passed 
+               to the components using props, and I utilised the useState hook so that the event listeners
+               on the "Select Reading" buttons will set the state to the value specified within the onClick event, triggering the re-render of
+               the app component, conditionally returning the appropriate component. <br>
+               This is a personal project of my own creation.
               </p>
-              
-            </li>
-            <li>
-              <h3 class="title2">Memory Box</h3>
-              <p>During the project phase of Northcoders, my teammates and I created a journal app that prompts the user with a different question each day. We learned some new technologies for this project such as SvelteKit, Firebase and Typescript. </p>
-              <p class="portfolioButtonHolder1">
-                <a class="portfolioButton" class="grid-item" href="https://www.figma.com/file/bo28Fg9vTPGEjBKeU4Xi8D/Memory-Box?node-id=0%3A1" target="__blank">Wireframes</a>
-                <a class="portfolioButton" class="grid-item" href="https://www.linkedin.com/posts/christina-webb-sfougaras_graduation-showcase-many-people-activity-6852198109754265600-pEYr" target="__blank">Demo</a>
-                <a class="portfolioButton" class="grid-item" href="https://trello.com/b/WJVPLx72/memory-box" target="__blank">Agile </a>
-                <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/memory-box-1" target="__blank"> Repo </a>
-              </p>
-             
-            </li>
-            <li>
-              <h3 class="title2">Simon Game</h3>
-              <p>A classic memory game created for web browser using jQuery. It keeps score of your level, and each button responds with a different sound.</p>
               <p class="portfolioButtonHolder">
-                <a class="portfolioButton" class="grid-item" href="https://c-webb-sfougaras.github.io/simon-game/" target=”_blank”>Play the Game</a>
-                <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/simon-game" target=”_blank”>The Codebase</a>
-              </p>
-            </li>
-            <li>
-              <h3 class="title2">Mailing List</h3>
-              <p>A mailing list sign-up page which interacts with the MailChimp API and saves people's sign-up details, so that I can contact them in future. It is hosted with Heroku.</p>
-              <p class="portfolioButtonHolder">
-                <a class="portfolioButton" class="grid-item" href="https://morning-reaches-07890.herokuapp.com/" target=”_blank”>Sign Up Page</a>
-                <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/newsletter-signup" target=”_blank”>The Codebase</a>
+                <a class="portfolioButton" class="grid-item" href="https://christina-tarot-app.herokuapp.com/" target="__blank">Read Your Tarot</a>
+                <a class="portfolioButton" class="grid-item" href="https://docs.google.com/forms/d/e/1FAIpQLScrxTeizOvry-YIBpF7bx0SVbxplqhDh3c9aMMTPzpao6ftRA/viewform?usp=sf_link" target="__blank">Request Codebase Access</a>
               </p>
             </li>
             <li>
               <h3 class="title2">To Do List</h3>
-              <p>This to do list website is created using EJS and which uses the Mongoose ORM to connect to a MongoDB database. If you add a new endpoint, a new list will be created and will save any to dos in their own database collection.</p>
+              <img src="./todocv.png" alt="" class="portfolioImg">
+              <p>Created using EJS and MongoDB, this to-do list dynamically creates a new database collection when you add a
+                 new endpoint to the URL. I also used the Mongoose ORM to interact with my MongoDB.<br>
+                 The title of the list is today's date by default, but changes to the list name when another endpoint 
+                 besides the home route is accessed.
+                 When a checkbox is clicked, the item associated is deleted from the database.
+                Created as part of my web development course with Udemy.</p>
               <p class="portfolioButtonHolder">
                 <a class="portfolioButton" class="grid-item" href="https://pumpkin-cobbler-71972.herokuapp.com/" target=”_blank”>To Do List</a>
                 <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/todolist" target=”_blank”>The Codebase</a>
               </p>
             </li>
             <li>
+              <h3 class="title2">Simon Game</h3>
+              <img src="./simoncv.png" alt="" class="portfolioImg">
+              <p>A classic memory game recreated using jQuery, specifically to be played in web browser. 
+               <br> To commence play, press any key on your keyboard (an event listener awaiting a key press event starts the game). 
+                A coloured square will flash and the played has to remember the order that the squares flashed in.
+                A counter keeps score of your level and displays it back to the player, and each button 
+                responds with a different sound and is animated when pressed.</p>
+              <p class="portfolioButtonHolder">
+                <a class="portfolioButton" class="grid-item" href="https://c-webb-sfougaras.github.io/simon-game/" target=”_blank”>Play the Game</a>
+                <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/simon-game" target=”_blank”>The Codebase</a>
+              </p>
+            </li>
+            <li>
+              <h3 class="title2">Memory Box</h3>
+              <img src="./memoryboxcv.png" alt="" class="portfolioImg">
+              <p>During the project phase of Northcoders, my teammates and I created a journal app that prompts
+                the user with a different question each day. We used SvelteKit, Firebase and Typescript. 
+                I personally created the designs (high fidelity mock-ups) using Figma, with a variety of different
+                style options. </p>
+              <p class="portfolioButtonHolder1">
+                <a class="portfolioButton" class="grid-item" href="https://www.figma.com/file/bo28Fg9vTPGEjBKeU4Xi8D/Memory-Box?node-id=0%3A1" target="__blank">Figma</a>
+                <a class="portfolioButton" class="grid-item" href="https://www.linkedin.com/posts/christina-webb-sfougaras_graduation-showcase-many-people-activity-6852198109754265600-pEYr" target="__blank">Demo</a>
+                <a class="portfolioButton" class="grid-item" href="https://trello.com/b/WJVPLx72/memory-box" target="__blank">Agile </a>
+                <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/memory-box-1" target="__blank"> Repo </a>
+              </p>
+             
+            </li>
+           
+            <li>
+              <h3 class="title2">Mailing List</h3>
+              <img src="./signupcv.png" alt="" class="portfolioImg">
+              <p>A mailing list sign-up page which interacts with the MailChimp API and saves people's 
+                sign-up details, so that they can be contacted in future. It is hosted with Heroku.</p>
+              <p class="portfolioButtonHolder">
+                <a class="portfolioButton" class="grid-item" href="https://morning-reaches-07890.herokuapp.com/" target=”_blank”>Sign Up Page</a>
+                <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/newsletter-signup" target=”_blank”>The Codebase</a>
+              </p>
+            </li>
+          
+            <li>
               <h3 class="title2">Keyboard Drum Kit</h3>
-              <p>By manipulating the DOM, this drumkit uses higher order functions and event listeners to play sounds when you either click on the buttons or press the keys on your keyboard.</p>
+              <img src="./drumcv.png" alt="" class="portfolioImg">
+              <p>By manipulating the DOM, this drumkit uses higher order functions and event listeners to 
+                play sounds when you either click on the buttons or press the corresponding keys on your keyboard.</p>
               <p class="portfolioButtonHolder">
                 <a class="portfolioButton" class="grid-item" href="https://c-webb-sfougaras.github.io/drumkit/" target=”_blank”>Play the Drums</a>
                 <a class="portfolioButton" class="grid-item" href="https://github.com/c-webb-sfougaras/drumkit" target=”_blank”>The Codebase</a>
